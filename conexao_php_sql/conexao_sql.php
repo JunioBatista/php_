@@ -66,3 +66,13 @@ pg_close($conn);
 //-----USANDO CLASSE PDO (ESCOLHER SGBD NO :host do parametro)-----
 $dsn = new PDO("mysql:host=localhost;dbname=test", $user, $pass);
 $dsn = new PDO("pgsql:host=localhost;dbname=test"; $user, $pass);
+
+//com tratamento de exceções
+try {
+	$dsn = new PDO("mysql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME .";user=" . USER . ";password=" . PASSWORD);
+} catch (PDOException $e) {
+	echo 'A conexão falhou, erro: ' .$e->getMessage();
+}
+
+//ENCERRAR	
+$dsn = null;
