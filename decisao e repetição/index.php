@@ -5,7 +5,7 @@ $_var1 = 5;
 $_var2 = '5';
 
 // <!-- ternário -->
-$comparacao = ($_var1 && $_var2) ? 'alguma coisa' : 'outra coisa'
+$comparacao = ($_var1 && $_var2) ? 'alguma coisa' : 'outra coisa';
 $outracomp = ($var1 >= 10) ? 11 : 9;
 echo $var2; //imprimirá 9
 
@@ -46,8 +46,8 @@ switch($fruta) {
         echo('uva');
 
     default:
-        echo('nenhuma das opcoes')
-        break
+        echo('nenhuma das opcoes');
+        break;
 }
 
 // <!-- ESTRUTURAS REPETIÇÃO: While, Do-while, for, for each  -->
@@ -57,14 +57,14 @@ $contador = 0
 while(contador < 10){
     <!-- do-something -->
     contador++
-}
+};
 
 // ou
 $i = 2;
 while ($i <= 20):
-   echo $i;
-   $i+=2;
-   echo "\n";
+    echo $i;
+    $i+=2;
+    echo "\n";
 endwhile;
 
 // <!-- DO WHILE -->
